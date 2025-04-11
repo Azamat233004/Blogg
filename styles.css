@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5c2ed9;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .new-post, .feed {
+    background-color: #eeeeee;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .new-post {
+    width: 500px;
+  }
+  
+  .feed {
+    width: 300px;
+  }
+  
+  h2 {
+    color: #4b00ff;
+  }
+  
+  input[type="text"], textarea, select {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4b00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3700b3;
+  }
+  
+  .clear-button {
+    background-color: #ff4444;
+    margin-top: 15px;
+  }
+  
+  .clear-button:hover {
+    background-color: #cc0000;
+  }
+  
+  .post {
+    background-color: white;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .post .date {
+    font-size: 12px;
+    color: orange;
+  }
+  
+  .post .title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4b00ff;
+  }
+  
+  .post .content {
+    color: #4b00ff;
+  }
+  
+  .post .topic {
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .post img, .post video {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .like-btn {
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .like-btn.liked {
+    color: red;
+  }
+  
+  .delete-btn {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .new-post, .feed {
+      width: 100%;
+    }
+  }

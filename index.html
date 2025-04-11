@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="new-post">
+      <h2>Новый пост</h2>
+      <input type="text" id="title" placeholder="Заголовок поста">
+      <textarea id="content" rows="4" placeholder="Текст поста"></textarea>
+      <select id="topic">
+        <option value="Общее">Общее</option>
+        <option value="Новости">Новости</option>
+        <option value="Шутка">Шутка</option>
+        <option value="Личное">Личное</option>
+      </select>
+      <input type="file" id="images" multiple accept="image/,video/">
+      <button onclick="publishPost()">Опубликовать</button>
+    </div>
+
+    <div class="feed">
+      <h2>Лента</h2>
+      <input type="text" id="search" placeholder="Поиск по постам">
+      <p id="post-counter">Всего постов: 0</p>
+      <div id="post-list"></div>
+      <button onclick="clearPosts()" class="clear-button">Стереть ленту</button>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
